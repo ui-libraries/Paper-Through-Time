@@ -1,0 +1,47 @@
+.iowa-bar {
+  margin: 0 0 32px 0;
+  padding: 0;
+  height: 50px;
+  background-color: $hawk-gold;
+
+  &__container {
+    margin: 0 auto;
+    max-width: $fixed-width;
+
+    .logo--tab {
+      display: inline-block;
+      // margin-top: -3px;
+      margin-right: 8px;
+      padding: 15px;
+      background-color: $hawk-black;
+
+      svg {
+        height: 26px;
+        fill: $hawk-gold;
+      }
+
+      .element-invisible {
+        display: none;
+      }
+    }
+
+    h1.site-name {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
+      @include font-size(1.8);
+
+      a {
+        font-family: $font-body-02;
+        
+        text-decoration: none;
+        transition: 0.2;
+
+        &:hover {
+          opacity: 0.8;;
+        }
+      }
+    }
+  }
+}

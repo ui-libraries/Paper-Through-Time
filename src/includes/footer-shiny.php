@@ -1,0 +1,1 @@
+<p><a href="http://www.imls.gov/">Institute of Museum and Library Services</a>. <a href="http://book.grad.uiowa.edu/">UI Center for the Book</a>. Hosted by <a href="http://www.lib.uiowa.edu/">The University of Iowa Libraries</a>. © <a href="http://www.uiowa.edu">The University of Iowa</a> 2012.  All rights reserved.</div></p>

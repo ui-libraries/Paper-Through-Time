@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+
+$font-body-01:     'Lora', serif;
+$font-body-02:     'Roboto', sans-serif;
+$font-header-01:   'Lora', serif;
+
+// font-family: 'Antonio', sans-serif;
+// font-family: 'Lora', serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Zilla Slab', serif;
+
+html {
+  font-size: 62.5%;  // sets up the Base 10 stuff
+}
+
+// resets
+body, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family: $font-body-01;
+  @include font-size(1);
+
+	.small-type,
+	&.small-type {
+		@include font-size(0.8);
+	}
+}
+
+h1 {
+  @include font-size(2.4);
+}
