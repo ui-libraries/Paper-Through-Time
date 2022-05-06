@@ -1,0 +1,9 @@
+.footnotes2, .citation {
+  margin-top: 3rem;
+  border-top: 1px solid $secondary-gray;
+}
+
+.footnotes2 + .citation {
+  margin-top: auto;
+  border-top: 0px solid $secondary-gray;
+}

@@ -1,0 +1,142 @@
+#navigation-primary {
+
+  // ––– Navigation toggle button BEGIN ––––––––––––
+  .nav-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1rem;
+    padding: 8px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 0px solid transparent;
+    transition: 0.1s;
+
+    span {
+      @include font-size(1.8);
+      font-weight: bold;
+      text-transform: uppercase;
+
+      svg {
+        fill: white;
+        height: 3rem;
+        width: 3rem;
+        transition: 0.1s;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $hawk-gold;
+      color: black;
+
+      svg {
+        fill: black;
+      }
+    }
+  }
+
+  // --- Responsive layouts ------
+  @include breakpoint($medium-width) {
+
+    .nav-toggle {
+      display: none;
+    }
+    .navigation-site { 
+      display: block; 
+    }
+  }
+
+  &.COLLAPSED {
+
+    .nav-toggle {
+
+      svg {
+        &.close-nav { display: none; }
+        &.hamburger-nav { display: inline-block; }
+      }
+    }
+    .navigation-site { display: none; }
+  }
+  &:not(.COLLAPSED) {
+  
+    .nav-toggle {
+
+      svg {
+        &.close-nav { display: inline-block; }
+        &.hamburger-nav { display: none; }
+      }
+    }
+    .navigation-site { display: block; }
+  }
+  // -----------------------------------
+  // ––– Navigation toggle button END ––––––––––
+
+  ul {
+    margin: 2px 0 1em 0;
+    padding: 0;
+    list-style-type: none;
+
+    >li {
+      margin: .25em 0;
+      padding: 0;
+
+      &.section {
+        border-left: 2px solid $paper-2;
+        border-top-left-radius: 4px;
+
+        >strong {
+          display: block;
+          margin: 0;
+          padding: 0.25em 0.25em 0.25em calc(1em - 2px);
+          @include font-size(1.8);
+          font-weight: 600;
+          background-color: $paper-2;
+          color: white;
+        }
+
+        li {
+          margin: 2px 0;
+        }
+      }
+    
+      a {
+        display: block;
+        margin: 0;
+        padding: 0.5em 1em;
+        background-color: darken($paper-1, 0%);
+        color: black;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: 0.1s;
+        font-family: $font-body-01;
+        @include font-size(1.8);
+        font-weight: 600;
+
+        &.active {
+          background-color: lighten($hawk-gold, 15%);
+        }
+        
+        &:hover {
+          background-color: $hawk-gold;
+          text-decoration: none;
+        }
+
+        
+      }
+
+      ul {
+        margin: 0;
+
+        li {
+        
+           a {
+            padding: 0.5em 0.5em 0.5em calc(1em - 2px);
+           }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// Main home page of the project
+body.homepage {
+
+  #content-main > p > img {
+    width: 100%;
+  }
+}
+
+// Book home page
+body.epm-homepage {
+
+  // Formerly an image slider managed by Owl Carousel. 
+  #laws-beater {
+
+    .column {
+      display: inline-block; // override
+    }
+
+    #mymodal {
+      display: none; // What is this? Seems like a duplicate in mid-dev.
+    } 
+  }
+}

@@ -1,0 +1,164 @@
+.header-site {
+  position: relative;
+  margin: 4rem auto;
+  max-width: $fixed-width;
+  height: 160px;
+  background-image: none;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .title-site {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-family: $font-body-01;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 2px white;
+      @include font-size(3);
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-family: $font-body-01;
+      font-style: italic;
+      font-weight: 400;
+      text-shadow: 2px 2px 2px white;
+      @include font-size(2);
+    }
+  }
+  
+  // The papermaker image
+  &:before {
+    display: block;
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 158px;
+    top: -20px;
+    left: 10px;
+    background-image: url('https://paper.lib.uiowa.edu/images/papermaker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+
+  ul.project-partners {
+
+    .partner {
+      display: none; // default
+      
+      &--imls {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+
+        img {
+          height: 70px;
+        }
+      }
+      &--uicb {
+        display: block;
+        position: absolute;
+        top: 75px;
+        right: 20px;
+        opacity: 0.9;
+
+        img {
+          height: 70px;
+        }
+      }
+      &--dsps {
+        // display: block;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+
+        img {
+          height: 56px;
+        }
+      }
+
+      body.epm &--dsps { display: block; }
+      body.epm &--imls { display: none; }
+    }
+  }
+
+  // ––– BREAKPOINTS BEGIN –––––––––––––––––
+  @include breakpoint($small-width) {
+    height: 160px;
+
+    .title-site {
+      top: 24px;
+      left: 20px;
+
+      h1 {
+        @include font-size(3);
+      }
+
+      h2 {
+        @include font-size(1.4);
+      }
+    }
+
+    &:before {
+      display: block;
+      opacity: 0.333;
+    }
+  }
+
+  @include breakpoint($medium-width) {
+    background-image: url('https://paper.lib.uiowa.edu/images/paper-header-sans-all-full.jpg');
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    height: 160px;
+
+    .title-site {
+      top: 24px;
+      left: 180px;
+
+      h1 {
+        @include font-size(4);
+      }
+
+      h2 {
+        @include font-size(2);
+      }
+    }
+
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint($large-width) {
+    
+    .title-site {
+
+      h1 {
+        @include font-size(5.4);
+      }
+
+      h2 {
+        @include font-size(2.6);
+      }
+    }
+  }
+  @include breakpoint($fixed-width) {
+    border: 2px solid #111;
+
+    // .partner-links {
+    .project-partners {
+      display: block;
+    }
+  }
+  // ––– BREAKPOINTS END ––––––––––––––––––––––––––––––––
+}

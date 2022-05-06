@@ -22,7 +22,7 @@ var sassOptions = {
         'node_modules/breakpoint-sass/stylesheets/'
     ],
     errLogToConsole: true,
-    outputStyle: 'expanded'
+    outputStyle: 'compressed'
 };
 
 var autoprefixerOptions = {

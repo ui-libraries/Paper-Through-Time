@@ -1,10 +1,10 @@
-body { margin: 0; padding: 0; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; background-image: url(../images/TimImage4.jpg); background-repeat: repeat; color: #000; }
-#body { width: 960px; margin: 0 auto 20px auto; border-right-width: 2px; border-left-width: 2px; border-right-style: solid; border-left-style: solid; border-right-color: #000; border-left-color: #000; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #000; background-image: url(../images/atlasbackground.png); background-repeat: repeat; background-color: #D1BB9A; }
-a { color: #000; }
+// body { margin: 0; padding: 0; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; background-image: url(../images/TimImage4.jpg); background-repeat: repeat; color: #000; }
+// #body { width: 960px; margin: 0 auto 20px auto; border-right-width: 2px; border-left-width: 2px; border-right-style: solid; border-left-style: solid; border-right-color: #000; border-left-color: #000; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #000; background-image: url(../images/atlasbackground.png); background-repeat: repeat; background-color: #D1BB9A; }
+// a { color: #000; }
 /* h1 { display: none; } */
-h2 { padding-top: 0; margin-top: 0; font-size:18px; text-transform: uppercase; }
-#header { height: 181px; width: 960px; margin: 0 auto; background-image: url(../images/atlasbackground.png); background-repeat: repeat; }
-#container { width: 960px; margin: 0 auto; font-size: 1.06em; color:#000; }
+// h2 { padding-top: 0; margin-top: 0; font-size:18px; text-transform: uppercase; }
+// #header { height: 181px; width: 960px; margin: 0 auto; background-image: url(../images/atlasbackground.png); background-repeat: repeat; }
+// #container { width: 960px; margin: 0 auto; font-size: 1.06em; color:#000; }
 #sidebar { float: left; width: 220px; height: 100%; }
 #sidebar ul { list-style-type: none; padding:  24px 0 0 25px; margin: 0; }
 #sidebar ul li { padding-bottom: 17px; }
@@ -17,23 +17,23 @@ h2 { padding-top: 0; margin-top: 0; font-size:18px; text-transform: uppercase; }
 #sidebar ul li ul li.indent { padding-left: 15px; }
 #sidebar img { padding-top: 75px; }
 #right_column { float: right; width: 710px; padding-right: 10px; }
-#graph { padding: 10px 0 0 0; }
-#footer { width: 960px; padding: 3px 0 10px 0; margin: 0 auto; text-align: center; clear: both; }
-#footer p { font-size: 12px; color: #000; }
-#footer a { font-size: 12px; text-decoration: none; color: #000; }
-#footer a:hover { text-decoration: underline; }
-.indent { padding-left: 15px; }
-table { border: 1px #333 solid; border-collapse:collapse; font-family: "Times New Roman", Times, serif; }
-table p { margin: 0; padding: 0; }
-table td, table th { border: 1px #333 solid; padding: 3px; }
+// #graph { padding: 10px 0 0 0; }
+// #footer { width: 960px; padding: 3px 0 10px 0; margin: 0 auto; text-align: center; clear: both; }
+// #footer p { font-size: 12px; color: #000; }
+// #footer a { font-size: 12px; text-decoration: none; color: #000; }
+// #footer a:hover { text-decoration: underline; }
+// .indent { padding-left: 15px; }
+// table { border: 1px #333 solid; border-collapse:collapse; font-family: "Times New Roman", Times, serif; }
+// table p { margin: 0; padding: 0; }
+// table td, table th { border: 1px #333 solid; padding: 3px; }
 .red { color: #900; }
 .endnotes { font-size: 10px; vertical-align: super; }
 .footnotes { font-size: 80%; margin: 0 90px; border-top-width: 1px; border-top-style: solid; border-top-color: #999; }
 .footnotes2 { font-size: 80%; margin-top: 5px; padding: 0; border-top-width: 1px; border-top-style: solid; border-top-color: #999; }
 .text { padding: 0px 10px 0px 0px; }
-#copyright { text-align: right; font-size: 80%; padding: 20px 20px 0px 0px; }
-#copyright2 { text-align: right; font-size: 80%; padding: 0px 90px 5px 0px; }
-.citation { font-size: 90% }
+// #copyright { text-align: right; font-size: 80%; padding: 20px 20px 0px 0px; }
+// #copyright2 { text-align: right; font-size: 80%; padding: 0px 90px 5px 0px; }
+// .citation { font-size: 90% }
 #update p { text-align: center; padding: 0 20px 0 0; margin: 0; font-size: small; }
 .chronheader { text-align: center; }
 .chronheader h4, .chronheader p { padding: 0; margin: 0; }
