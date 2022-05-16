@@ -1,0 +1,20 @@
+.simple-lightbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  >a {
+
+    img {
+      flex: 1; 
+      max-width: 200px;
+    }
+
+    &:hover {
+      outline: 6px solid $hawk-gold;
+    }
+  }
+  
+  
+}
