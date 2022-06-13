@@ -87,8 +87,9 @@
         }
       }
 
-      body.epm &--dsps { display: block; }
-      body.epm &--imls { display: none; }
+      // These lines switched out the Studio lockup graphic on the book subpages.
+      // body.epm &--dsps { display: block; }
+      // body.epm &--imls { display: none; }
     }
   }
 

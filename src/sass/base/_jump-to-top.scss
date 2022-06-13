@@ -18,7 +18,7 @@
   }
 }
 
-$size: 4rem;
+$size: 6rem;
 $offsetBottom: 2rem;
 $offsetHorizontal: 2rem;
 $scrollToRevealDistance: 40rem; // scroll offset to reveal scroll-to-top link
@@ -68,6 +68,10 @@ $scrollToRevealDistance: 40rem; // scroll offset to reveal scroll-to-top link
     #scrolltop-arrow {
       transform: scale(0.8);
       transform-origin: center;
+    }
+
+    &:focus {
+      outline: $secondary-blue solid 4px;
     }
   }
   @media print {

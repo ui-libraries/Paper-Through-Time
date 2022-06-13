@@ -1,0 +1,21 @@
+body.epm {
+
+  .header-site .title-site {
+    text-align: center;
+  
+    h1 {
+      @include font-size(4);
+    }
+
+    h2 {
+      @include font-size(3);
+    }
+  }
+
+  #navigation-primary {
+  
+    .back-to-project {
+      margin-bottom: 0.75em;
+    }
+  }
+}

@@ -25,7 +25,7 @@ body {
   }
 
   // --- Responsive layouts ------
-  @include breakpoint($medium-width) {
+  @include breakpoint($large-width) {
 
     .content-wrapper {
 

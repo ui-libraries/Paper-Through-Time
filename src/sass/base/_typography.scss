@@ -12,16 +12,23 @@ html {
 
 body, p, ul {
 	font-family: $font-body-01;
-	@include font-size(1.8);
+	@include font-size(2.4);
+	line-height: 1.5;
+	// color: black;
 
 	.small-type,
 	&.small-type {
 		@include font-size(1.2);
 	}
+
+	@include breakpoint($large-width) {
+		@include font-size(1.8);
+	}
 }
 
-// ––– Headings
 #content-main {
+	color: black;
+	background-color: white;
 
 	h1, h2, h3, h4, h5 {
 		font-family: $font-body-01;
@@ -31,17 +38,17 @@ body, p, ul {
 	h1 {
 		margin: 0;
 		padding-bottom: 0.5em;
-		@include font-size(2.8);
+		@include font-size(3);
 	}
 	h2 {
 		margin: 0;
 		padding-bottom: 0.5em;
-		@include font-size(2.6);
+		@include font-size(3.6);
 	}
 	h3 {
 		margin: 2em 0 0 0;
 		padding-bottom: 0.5em;
-		@include font-size(2.2);
+		@include font-size(3.2);
 
 		+ p {
 			margin-top: 0.25em;
@@ -51,7 +58,7 @@ body, p, ul {
 		margin: 1em 0 0 0;
 		padding-bottom: 0.25em;
 		font-style: italic;
-		@include font-size(2.0);
+		@include font-size(2.8);
 
 		+ p {
 			margin-top: 0.25em;
@@ -61,24 +68,29 @@ body, p, ul {
 		margin: 1em 0 0 0;
 		padding-bottom: 0.25em;
 		font-style: italic;
-		@include font-size(1.8);
+		@include font-size(2.4);
 
 		+ p {
 			margin-top: 0.25em;
 		}
 	}
 
+	p , ul, li {
+		color: black;
+	}
+
 	@include breakpoint($fixed-width) {
 
 		h2 {
+			@include font-size(3.6);
+		}
+		h3 {
 			@include font-size(3.2);
 		}
-		h3 {
-			@include font-size(2.6);
-		}
-		h3 {
-			@include font-size(2.4);
+		h4 {
+			@include font-size(2.8);
 		}
 
 	}
 }
+
